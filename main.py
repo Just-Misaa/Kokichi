@@ -341,8 +341,18 @@ async def vtuber(ctx : commands.Context):
 
     await ctx.send(embed = embed)
 
+@client.command()
+async def source(ctx):
+    embed = discord.Embed(title = "My source code !", description = "https://github.com/Just-Misaa/Kokichi", color = discord.Color.random())
+    embed.set_footer(text = "follow me on Instagram by `@foxymisa1102")
+    await ctx.send(embed = embed)
 
+@client.command()
+async def invite(ctx):
+    embed = discord.Embed(title = "Invite me to your server!!!", description = "https://discord.com/api/oauth2/authorize?client_id=915419050358763540&permissions=8&scope=bot", color = discord.Color.random())
+    embed.set_footer(text = "follow me on Instagram by `@foxymisa1102`")
 
+    await ctx.send(embed = embed)
 
 
 #    HELPS
@@ -355,12 +365,8 @@ async def help(ctx):
     helpEmbed.add_field(name = "Fun", value = "`8ball`, `cool rate`, `ping`", inline = False)
     helpEmbed.add_field(name = "Math", value = "`sum`, `subtract`, `multi`, `division`", inline = False)
     helpEmbed.add_field(name = "Moderation", value = "`clear`, `kick`, `ban`, `unban`, `userinfo`, `activity`, `mute`", inline = False)
-    helpEmbed.add_field(name = "Utils", value = "`hug`, `hentai`, `vtuber`", inline = False)
+    helpEmbed.add_field(name = "Utils", value = "`hug`, `hentai`, `vtuber`, `source`, `invite`", inline = False)
     await ctx.send(embed = helpEmbed)
-
-
-
-
 
 
 
